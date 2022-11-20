@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileListGen": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Main\\source\\repos\\FileListGen"
+    }
+  }
+}
