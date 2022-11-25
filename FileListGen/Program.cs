@@ -7,6 +7,12 @@
             if (args.Length == 0)
             {
                 Console.WriteLine("Please enter the directory path in the argument.");
+                Console.WriteLine(string.Empty);
+                Console.WriteLine("Usage : ");
+                Console.WriteLine(@"./FileListGen.exe DirectoryPath");
+                Console.WriteLine(string.Empty);
+                Console.WriteLine("Quart option : ");
+                Console.WriteLine(@"./FileListGen.exe DirectoryPath -q");
             }
             else
             {
