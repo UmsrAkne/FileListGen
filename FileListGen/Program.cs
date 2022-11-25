@@ -16,10 +16,28 @@
                     return;
                 }
 
+                bool addQuart = false;
+
+                if (args.Length >= 2)
+                {
+                    if (args[1] == @"-q")
+                    {
+                        addQuart = true;
+                    }
+                }
+
                 var paths = Directory.GetFiles(path);
                 foreach (string p in paths)
                 {
-                    Console.WriteLine($"\"{p}\"");
+                    switch (addQuart)
+                    {
+                        case true:
+                            Console.WriteLine($"\"{p}\"");
+                            break;
+                        default:
+                            Console.WriteLine($"{p}");
+                            break;
+                    }
                 }
             }
         }
